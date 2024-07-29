@@ -1,0 +1,75 @@
+:root {
+    --dark_1: #2E3440;
+    --dark_2: #3B4252;
+    --dark_3: #434C5E;
+    --dark_4: #4C566A;
+    --light_1: #D8DEE9;
+    --light_2: #E5E9F0;
+    --light_3: #ECEFF4;
+    --blue_1: #5E81AC;
+    --blue_2: #81A1C1;
+    --blue_3: #88C0D0;
+    --blue_4: #8FBCBB;
+
+    --header_height: 2rem;
+    --footer_height: 3rem;
+}
+
+body {
+    margin-top: calc(var(--header_height) + 1rem);
+    background-color: var(--dark_1);
+    color: var(--light_1);
+    font-family: Arial;
+    margin-bottom: calc(var(--footer_height) * 4);
+}
+
+a {
+    text-decoration: none;
+    color: var(--blue_4);
+}
+
+header {
+    padding-left: 30px;
+    padding-top: 5px;
+    padding-bottom: 5px;
+    border-bottom: 1px solid var(--blue_4);
+    background-color: var(--dark_4);
+    
+    position: fixed;
+    top: 0;
+    left: 0;
+    max-height: var(--header_height);
+    width: 100%;
+}
+
+.site_home {
+    font-size: 1.5rem;
+    font-weight: bold;
+    margin-right: 10px;
+}
+
+.links {
+    margin-right: 5px;
+}
+
+
+footer {
+    position: fixed;
+    background-color: var(--dark_4);
+    width: 100%;
+    left: 0;
+    bottom: 0;
+    border-top: 1px solid var(--blue_4);
+    font-size: small;
+}
+
+.page_name {
+    font-size: 1.5rem;
+    font-weight: bold;
+    margin-right: 10px;
+}
+
+.username {
+    color: var(--blue_4);
+}
+
