@@ -15,12 +15,26 @@
     --footer_height: 3rem;
 }
 
+@keyframes body-color {
+    from {
+        background-color: var(--dark_1);
+        color: var(--light_1);
+    }
+    to {
+        background-color: var(--light_1);
+        color: var(--dark_1);
+    }
+}
+
 body {
     margin-top: calc(var(--header_height) + 1rem);
     background-color: var(--dark_1);
     color: var(--light_1);
     font-family: Arial;
     margin-bottom: calc(var(--footer_height) * 4);
+
+    animation: body-color linear both;
+    animation-timeline: scroll();
 }
 
 a {
@@ -28,7 +42,41 @@ a {
     color: var(--blue_4);
 }
 
+h1 {
+    margin-top: 5%;
+    margin-bottom: 0px;
+}
+
+h2 {
+    display:inline-block;
+    margin-right:10%;
+}
+
+h3 {
+    float: right;
+    margin-left: auto;
+    margin-right: 0px;
+}
+
+h4 {
+    font-size: 1.25rem
+}
+
+hr {
+    margin: 0px;
+    display: block;
+    border-width: 1px;
+    background-color: var(--dark_1);
+}
+
+p {
+    font-size: 1.25rem;
+    margin-bottom: 2.5%;
+    margin-top: 0px;
+}
+
 header {
+    font-size: 1.25rem;
     padding-left: 30px;
     padding-top: 5px;
     padding-bottom: 5px;
@@ -40,18 +88,9 @@ header {
     left: 0;
     max-height: var(--header_height);
     width: 100%;
-}
 
-.site_home {
-    font-size: 1.5rem;
     font-weight: bold;
-    margin-right: 10px;
 }
-
-.links {
-    margin-right: 5px;
-}
-
 
 footer {
     position: fixed;
@@ -67,9 +106,14 @@ footer {
     font-size: 1.5rem;
     font-weight: bold;
     margin-right: 10px;
+    color: var(--light_1);
 }
 
 .username {
     color: var(--blue_4);
 }
 
+.links {
+    color: var(--light_1);
+    font-size: 1.1rem;
+}
